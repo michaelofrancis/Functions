@@ -27,5 +27,4 @@ for (i in 1:length(search_terms)){
 #Example
 #manyColsToDummy("find_this", big_table[,columns_to_look_in], "dummy_output_table")
 
-
-
+#Visual example found here: https://ibb.co/VwHvBLT
