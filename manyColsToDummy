@@ -17,7 +17,6 @@ for (i in 1:length(search_terms)){
     ))>0
     temp_table[,i]<-vec
 }
-  #output_table<-as.character(output_table)
   temp_table<-sapply(temp_table, as.integer, as.logical)
   temp_table<-as.data.frame(temp_table)
   assign(x = output_table, value = temp_table, envir = globalenv())
