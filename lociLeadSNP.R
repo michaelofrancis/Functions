@@ -11,7 +11,6 @@
 
 ###=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
-
 locileadSNP<-function(data_frame, setdistance = 1000000, 
                       output_df_name = "locileadSNPoutput", 
                       writetofile=FALSE,
@@ -74,6 +73,8 @@ locileadSNP<-function(data_frame, setdistance = 1000000,
     outputfilename<-output_file_name
     write.table(output, outputfilename, quote=FALSE, row.names=FALSE)
     }
+  
+    #create R object of output table in global environment
     assign(x = output_df_name, value = output, envir = globalenv())
 }#end function
 ###=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
