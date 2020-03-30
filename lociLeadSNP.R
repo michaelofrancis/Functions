@@ -7,11 +7,11 @@
 #Example
 #testdata<-as.data.frame(matrix(data= c(1, 1000, 0.0005, 1, 5000, 0.0001, 2, 1000, 0.0001, 2, 10000, 0.000001), nrow=4, ncol=3, byrow = TRUE))
 #colnames(testdata)<-c("CHR", "POS", "P.value")
-#locileadSNP(testdata, setdistance = 5000, output_df_name = "lls_output_df", writetofile = TRUE, output_file_name = "lls_output.txt")
+#lociLeadSNP(testdata, setdistance = 5000, output_df_name = "lls_output_df", writetofile = TRUE, output_file_name = "lls_output.txt")
 
 ###=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
-locileadSNP<-function(data_frame, setdistance = 1000000, 
+lociLeadSNP<-function(data_frame, setdistance = 1000000, 
                       output_df_name = "locileadSNPoutput", 
                       writetofile=FALSE,
                       output_file_name = "locileadSNP.out"){
