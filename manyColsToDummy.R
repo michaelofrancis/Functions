@@ -2,6 +2,10 @@
 #and returns a dataframe of dummy variables that indicate if the values 
 #were present in these columns.
 
+#Note that grep functions use regular expressions as their search terms, so if you are trying to match a string or number, adding ^ and $ is necessary!
+#For example, if you want to match 612, use "^612$"
+
+
 
 manyColsToDummy<-function(search_terms, search_columns,
                           output_table){
